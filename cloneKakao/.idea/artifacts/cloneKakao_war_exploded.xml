@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cloneKakao:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/cloneKakao_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="cloneKakao/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cloneKakao" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
