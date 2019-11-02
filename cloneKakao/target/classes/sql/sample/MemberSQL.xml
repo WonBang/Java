@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="memberSQL">
+<mapper namespace="MemberDao">
+    
+    <insert id="insertMemberInfo" parameterType="member.vo.MemberVo">
+        INSERT INTO
+            TB_MEMBER
+        (
+            USER_ID,
+            USER_PW,
+            USER_NM,
+            PHONE,
+            REG_DATE,
+            DEL_DATE,
+            STATUS
+        )
+        VALUES
+        (
+            #{userId},
+            #{userPw},
+            #{userNm},
+            #{phone},
+            SYSDATE,
+            NULL,
+            'C'
+        )
+    </insert>
 
 </mapper>
