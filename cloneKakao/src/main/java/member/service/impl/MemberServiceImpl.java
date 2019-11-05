@@ -10,10 +10,11 @@ import org.springframework.stereotype.Service;
 public class MemberServiceImpl implements MemberService {
 
     @Autowired
-    MemberDao dao;
+    private MemberDao dao;
 
-
+    @Override
     public void insertMemberInfo(MemberVo memberVo) throws Exception{
+        System.out.println("service Call : " +memberVo.getUserNm());
         dao.insertMemberInfo(memberVo);
     }
 

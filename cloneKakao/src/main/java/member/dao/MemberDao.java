@@ -8,6 +8,7 @@ public class MemberDao {
     private SqlSession sqlSession;
 
     public void insertMemberInfo(MemberVo memberVo) throws Exception{
+        System.out.println("dao Call " +memberVo.getUserNm());
         sqlSession.insert("MemberDao.insertMemberInfo", memberVo);
     }
 }
