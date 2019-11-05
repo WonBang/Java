@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cloneKakao" target="1.5" />
+      <module name="cloneKakao" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>
